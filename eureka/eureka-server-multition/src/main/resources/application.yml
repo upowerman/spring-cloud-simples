@@ -1,0 +1,5 @@
+spring:
+    profiles:
+        active: zone1-region-east
+    application:
+        name: eureka-server

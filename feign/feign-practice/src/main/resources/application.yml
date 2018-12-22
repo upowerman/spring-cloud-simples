@@ -1,0 +1,26 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: feign
+
+feign:
+    httpclient:
+        enabled: false
+    okhttp:
+        enabled: true
+    hystrix:
+        enabled: true
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://127.0.0.1:8888/eureka/
+    instance:
+        prefer-ip-address: true
+
+
+ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 6000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
