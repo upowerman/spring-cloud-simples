@@ -14,7 +14,7 @@
     <name>eureka</name>
 
     <modules>
-        <module>eureka-server-multiton</module>
+        <module>eureka-server-multition</module>
         <module>eureka-server-single</module>
     </modules>
 
