@@ -18,6 +18,8 @@
         <module>config-server-db-bus</module>
         <module>config-client-refresh-autoconfig</module>
         <module>config-client-auto-refresh</module>
+        <module>config-client-high-availability</module>
+        <module>config-client-high-availability-autoconfig</module>
     </modules>
 
     <dependencies>
