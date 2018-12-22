@@ -20,6 +20,7 @@
         <module>zuul-example-4</module>
         <module>zuul-example-5</module>
         <module>auth-server</module>
+        <module>gateway-zuul-apollo</module>
     </modules>
 
     <dependencies>

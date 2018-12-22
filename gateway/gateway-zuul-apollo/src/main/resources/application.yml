@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway-zuul-apollo
+server:
+  port: 9019
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8888}/eureka/
+
+zuul:
+  routes:
+    client-apollo:
+      path: /client/**
+      serviceId: config-client-apollo
+
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: zuul-config
+  meta: http://localhost:8080
