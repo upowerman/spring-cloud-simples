@@ -3,9 +3,13 @@ package com.yunus.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-
 /**
- * @author lanxum
+ * Created with IntelliJ IDEA.
+ *
+ * @author: zzf
+ * @date: 2018/3/16
+ * @time: 23:55
+ * @description : 配置信息
  */
 @Component
 @ConfigurationProperties(prefix = "cn.springcloud.book")

@@ -6,9 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 /**
- * @author lanxum
+ * Created with IntelliJ IDEA.
+ *
+ * @author: zzf
+ * @date: 2018/1/8
+ * @time: 15:47
+ * @description : do some thing
  */
 @RestController
 @RequestMapping("configConsumer")
@@ -18,7 +22,7 @@ public class ConfigClientController {
     private ConfigInfoProperties configInfoValue;
 
     @RequestMapping("/getConfigInfo")
-    public String getConfigInfo() {
+    public String getConfigInfo(){
         return configInfoValue.getConfig();
     }
 }
