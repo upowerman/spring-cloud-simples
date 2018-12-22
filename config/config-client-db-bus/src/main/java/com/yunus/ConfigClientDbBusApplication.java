@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author lanxum
  */
 @SpringBootApplication
-public class ConfigClientDbApplication {
+public class ConfigClientDbBusApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientDbApplication.class, args);
+        SpringApplication.run(ConfigClientDbBusApplication.class, args);
     }
 
 }
