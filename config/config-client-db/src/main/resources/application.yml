@@ -1,10 +1,24 @@
 spring:
   application:
-    name: ch12-3-config-client-db
+    name: config-client-db
 
 server:
   port: 9096
 
 logging:
-      level:
-          root: INFO
+  level:
+    root: INFO
+
+# 对外保留 监控端点
+#  {/actuator/beans,/actuator/health,/actuator/conditions,/actuator/configprops,/actuator/env,/actuator/env/{toMatch},
+#   /actuator/env,/actuator/env,/actuator/info,/actuator/loggers,/actuator/loggers,/actuator/loggers,
+#   /actuator/heapdump,/actuator/threaddump,/actuator/metrics,/actuator/metrics,/actuator/scheduledtasks,/actuator/httptrace,
+#   /actuator/mappings,/actuator/refresh,/actuator/features,/actuator}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
