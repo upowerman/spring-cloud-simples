@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: ch12-8-config-client-high-availability
+    name: config-client-high-availability

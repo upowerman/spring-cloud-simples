@@ -20,6 +20,7 @@
         <module>config-client-auto-refresh</module>
         <module>config-client-high-availability</module>
         <module>config-client-high-availability-autoconfig</module>
+        <module>config-server-high-availability</module>
     </modules>
 
     <dependencies>
