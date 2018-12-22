@@ -21,6 +21,7 @@
         <module>config-client-high-availability</module>
         <module>config-client-high-availability-autoconfig</module>
         <module>config-server-high-availability</module>
+        <module>config-client-apollo</module>
     </modules>
 
     <dependencies>
