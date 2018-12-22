@@ -16,6 +16,8 @@
         <module>config-server-db</module>
         <module>config-client-db-bus</module>
         <module>config-server-db-bus</module>
+        <module>config-client-refresh-autoconfig</module>
+        <module>config-client-auto-refresh</module>
     </modules>
 
     <dependencies>
