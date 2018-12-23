@@ -17,5 +17,5 @@ zuul:
 apollo:
   bootstrap:
     enabled: true
-    namespaces: zuul-config
+    namespaces: TEST1.zuul-config
   meta: http://localhost:8080
