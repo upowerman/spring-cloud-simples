@@ -22,6 +22,7 @@
         <module>client</module>
         <module>config</module>
         <module>gateway</module>
+        <module>sleuth</module>
     </modules>
 
     <properties>
