@@ -3,9 +3,7 @@ package com.yunus.feign;
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -31,6 +29,6 @@ public interface FileUploadFeignService {
      * @param imagekey
      * @return
      */
-    @GetMapping("/file/createImageCode")
+    @RequestMapping(value = "/file/createImageCode", consumes = {MediaType.APPLICATION_JSON_UTF8_VALUE}, method = RequestMethod.GET)
     Response createImageCode();
 }

@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,13 +40,16 @@ public class FileController {
      *
      * @param response
      */
-    @GetMapping("/createImageCode")
+    @GetMapping(value = "/createImageCode", produces = {MediaType.APPLICATION_PDF_VALUE})
     public void stream(HttpServletResponse response) {
         Response imageCode = fileUploadFeignService.createImageCode();
         try (InputStream in = imageCode.body().asInputStream()) {
-            byte[] buff = new byte[in.available()];
-            in.read(buff);
-            response.getOutputStream().write(buff);
+            ServletOutputStream out = response.getOutputStream();
+            byte[] buff = new byte[1024];
+            int len;
+            while ((len = in.read(buff)) != -1) {
+                out.write(buff, 0, len);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -8,9 +8,9 @@ feign:
     httpclient:
         enabled: false
     okhttp:
-        enabled: true
+        enabled: false
     hystrix:
-        enabled: true
+        enabled: false
 eureka:
     client:
         serviceUrl:
