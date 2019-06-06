@@ -7,9 +7,9 @@ eureka:
         health-check-url-path: /actuator/health
         hostname: localhost
         metadataMap.zone: zone2
-#    server:
-#        waitTimeInMsWhenSyncEmpty: 0
-#        enableSelfPreservation: false
+    server:
+        waitTimeInMsWhenSyncEmpty: 0
+        enableSelfPreservation: false
 #        remoteRegionUrlsWithName:
 #            region-west: http://localhost:8063/eureka/
     client:
