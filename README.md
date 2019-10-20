@@ -1,4 +1,6 @@
-# spring cloud 项目在公司落地之前 spring cloud 相关组件的学习过程
+# spring cloud 学习
+
+  spring cloud 在公司落地前对spring cloud 相关组件的学习过程
 
 # 参考资料
 
