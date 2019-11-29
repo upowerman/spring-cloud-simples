@@ -17,12 +17,39 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>feign</module>
-        <module>eureka</module>
-        <module>client</module>
-        <module>config</module>
-        <module>gateway</module>
-        <module>sleuth</module>
+        <module>eureka-server-single</module>
+        <module>eureka-server-multition</module>
+        <module>eureka-client</module>
+        <module>eureka-client-hystrix</module>
+        <module>eureka-client-multition</module>
+        <module>eureka-client-ribbon-lb</module>
+        <module>eureka-client-service-A</module>
+        <module>sleuth-consumer</module>
+        <module>sleuth-provider</module>
+        <module>auth-server</module>
+        <module>zuul-example-1</module>
+        <module>zuul-example-2</module>
+        <module>zuul-example-3</module>
+        <module>zuul-example-4</module>
+        <module>zuul-example-5</module>
+        <module>zuul-example-apollo</module>
+        <module>config-client-apollo</module>
+        <module>config-client-auto-refresh</module>
+        <module>config-client-db</module>
+        <module>config-client-db-bus</module>
+        <module>config-client-high-availability</module>
+        <module>config-client-high-availability-autoconfig</module>
+        <module>config-client-refresh-autoconfig</module>
+        <module>config-server-db</module>
+        <module>config-server-db-bus</module>
+        <module>config-server-high-availability</module>
+        <module>client-hello-service</module>
+        <module>client-hystrix-cache</module>
+        <module>client-hystrix-collapsing</module>
+        <module>client-hystrix-dashboard</module>
+        <module>client-hystrix-thread-context</module>
+        <module>client-provider-service</module>
+        <module>client-turbine</module>
     </modules>
 
     <properties>
@@ -111,10 +138,6 @@
                     <target>${maven.compile.target}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
