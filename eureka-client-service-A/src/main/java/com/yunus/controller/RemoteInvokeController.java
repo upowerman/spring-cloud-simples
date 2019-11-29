@@ -22,7 +22,7 @@ public class RemoteInvokeController {
 
     @GetMapping("/users")
     public List<User> list() {
-        List result = restTemplate.getForObject("http://demo-client1/api/users", List.class);
+        List result = restTemplate.getForObject("http://clienta/api/users", List.class);
         return result;
     }
 }

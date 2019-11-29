@@ -1,8 +1,0 @@
-
-########################## 使用url替代serviceId路由  ##########################
-
-zuul:
-  routes:
-    client-a:
-      path: /client/**
-      url: http://localhost:7070 #client-a的地址

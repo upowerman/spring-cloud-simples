@@ -15,22 +15,24 @@ import org.springframework.web.context.request.RequestContextHolder;
 import com.yunus.hystrix.service.IThreadContextService;
 
 /**
+ * 线程池隔离是上下文的传递
+ *
  * @author lanxum
  */
 @RestController
 public class ThreadContextController {
     private static final Logger log = LoggerFactory.getLogger(ThreadContextController.class);
-	   
-	@Autowired
-	private IThreadContextService threadContextService;
-	
-	@RequestMapping(value = "/getUser/{id}", method = RequestMethod.GET)
+
+    @Autowired
+    private IThreadContextService threadContextService;
+
+    @RequestMapping(value = "/getUser/{id}", method = RequestMethod.GET)
     public String getUser(@PathVariable("id") Integer id) {
-		//第一种测试，放入上下文对象
-		HystrixThreadLocal.threadLocal.set("userId : "+ id);
-		//第二种测试，利用RequestContextHolder放入对象测试
-		RequestContextHolder.currentRequestAttributes().setAttribute("userId", "userId : "+ id, RequestAttributes.SCOPE_REQUEST);
-		log.info("ThreadContextController, Current thread: " + Thread.currentThread().getId());
+        //第一种测试，放入上下文对象
+        HystrixThreadLocal.threadLocal.set("userId : " + id);
+        //第二种测试，利用RequestContextHolder放入对象测试
+        RequestContextHolder.currentRequestAttributes().setAttribute("userId", "userId : " + id, RequestAttributes.SCOPE_REQUEST);
+        log.info("ThreadContextController, Current thread: " + Thread.currentThread().getId());
         log.info("ThreadContextController, Thread local: " + HystrixThreadLocal.threadLocal.get());
         log.info("ThreadContextController, RequestContextHolder: " + RequestContextHolder.currentRequestAttributes().getAttribute("userId", RequestAttributes.SCOPE_REQUEST));
         //调用

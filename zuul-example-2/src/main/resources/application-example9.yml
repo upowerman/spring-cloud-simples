@@ -1,8 +1,0 @@
-
-########################## foward跳转本地url  ##########################
-
-zuul:
-  routes:
-    client-a:
-      path: /client/**
-      url: forward:/client

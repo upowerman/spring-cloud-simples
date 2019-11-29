@@ -7,5 +7,5 @@
 #      serviceId: client-a
 
 zuul:
-    routes:
-        client-a:
+  routes:
+    client-a:

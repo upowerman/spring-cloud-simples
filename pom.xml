@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.yunus</groupId>
-    <artifactId>spring-cloud-leaning</artifactId>
+    <artifactId>spring-cloud-learning</artifactId>
     <version>1.0</version>
 
     <modelVersion>4.0.0</modelVersion>
@@ -18,21 +18,14 @@
 
     <modules>
         <module>eureka-server-single</module>
-        <module>eureka-server-multition</module>
+        <module>eureka-server-multi</module>
         <module>eureka-client</module>
         <module>eureka-client-hystrix</module>
-        <module>eureka-client-multition</module>
+        <module>eureka-client-multi</module>
         <module>eureka-client-ribbon-lb</module>
         <module>eureka-client-service-A</module>
         <module>sleuth-consumer</module>
         <module>sleuth-provider</module>
-        <module>auth-server</module>
-        <module>zuul-example-1</module>
-        <module>zuul-example-2</module>
-        <module>zuul-example-3</module>
-        <module>zuul-example-4</module>
-        <module>zuul-example-5</module>
-        <module>zuul-example-apollo</module>
         <module>config-client-apollo</module>
         <module>config-client-auto-refresh</module>
         <module>config-client-db</module>
@@ -49,7 +42,10 @@
         <module>client-hystrix-dashboard</module>
         <module>client-hystrix-thread-context</module>
         <module>client-provider-service</module>
-        <module>client-turbine</module>
+        <module>client-hystrix-turbine</module>
+        <module>zuul-example-1</module>
+        <module>zuul-example-2</module>
+        <module>zuul-example-apollo</module>
     </modules>
 
     <properties>

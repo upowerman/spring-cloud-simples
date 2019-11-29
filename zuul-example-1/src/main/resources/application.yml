@@ -1,14 +1,14 @@
 spring:
-    profiles:
-        active: example8
+  profiles:
+    active: example5
 
-    application:
-        name: zuul-server
+  application:
+    name: zuul-server
 server:
-    port: 5555
+  port: 5555
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8888}/eureka/
-    instance:
-        prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8888}/eureka/
+  instance:
+    prefer-ip-address: true

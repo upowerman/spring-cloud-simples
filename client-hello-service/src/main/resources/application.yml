@@ -1,35 +1,35 @@
 server:
-    port: 9091
+  port: 9091
 spring:
-    application:
-        name: client-hello-service
+  application:
+    name: client-hello-service
 
 
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://127.0.0.1:8888/eureka/
-    instance:
-        prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8888/eureka/
+  instance:
+    prefer-ip-address: true
 
 management:
-    endpoints:
-        web:
-            exposure:
-                include: '*'
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 feign:
-    hystrix:
-        enabled: true
+  hystrix:
+    enabled: true
 ribbon:
-    ConnectTimeout: 6000
-    ReadTimeout: 6000
-    MaxAutoRetries: 0
-    MaxAutoRetriesNextServer: 0
+  ConnectTimeout: 6000
+  ReadTimeout: 6000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0
 hystrix:
-    command:
-        default:
-            execution:
-                timeout:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 15000
+  command:
+    default:
+      execution:
+        timeout:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
