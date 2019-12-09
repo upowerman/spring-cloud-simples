@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        # https://mse.console.aliyun.com/?spm=5176.acm.aliyun_sidebar.aliyun_sidebar_mse.756d4a9b24x2XP#/Index 公有云申请的地址
+        server-addr: mse-6c6e8170-p.nacos-ans.mse.aliyuncs.com:8848
