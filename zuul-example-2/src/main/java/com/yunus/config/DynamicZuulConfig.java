@@ -22,7 +22,7 @@ public class DynamicZuulConfig {
 	@Bean
 	public DynamicZuulRouteLocator routeLocator() {
 		DynamicZuulRouteLocator routeLocator = new DynamicZuulRouteLocator(
-				serverProperties.getServlet().getServletPrefix(), zuulProperties);
+				serverProperties.getServlet().getContextPath(), zuulProperties);
 		return routeLocator;
 	}
 }
