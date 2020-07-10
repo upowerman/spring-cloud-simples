@@ -1,6 +1,6 @@
 # spring cloud 学习
 
-  spring cloud 在公司落地前对spring cloud 相关组件的学习过程
+  spring cloud 在北京立思辰科技股份有限公司落地前对spring cloud 相关组件的学习过程
 
 # 参考资料
 
