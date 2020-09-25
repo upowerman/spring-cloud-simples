@@ -4,6 +4,6 @@
 
 # 参考资料
 
-1. 《重新定义spring cloud实战》 这本书
+- [1. 《重新定义spring cloud实战》 这本书](https://book.douban.com/subject/30338647/)
+- [2. 极客时间 微服务实战160讲 杨波](https://time.geekbang.org/course/intro/100007001)
 
-2.  极客时间  微服务实战160讲  杨波
